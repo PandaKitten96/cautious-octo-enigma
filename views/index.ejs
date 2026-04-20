@@ -11,16 +11,17 @@
   <body>
     <h1>Haikus for Mona</h1>
     <div>
-      <% for(var i=0; i < haikus.length; i++) { %>
+      <% haikus.forEach(haiku => { %>
         <img
           class="mona-images"
-          src="images/<%= haikus[i].image %>" />
+          src="images/<%= haiku.image %>" />
         <div 
           class="haiku-containers">
           <p 
             class="haikus"
-          ><%- haikus[i].text %></p>
+          ><%- haiku.text %></p>
         </div>
-      <% } %>
+      <% }); %>
     </div>
+  </body>
 </html>

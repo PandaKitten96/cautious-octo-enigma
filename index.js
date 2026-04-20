@@ -1,6 +1,5 @@
-let express = require('express');
-let app = express();
-let ejs = require('ejs');
+const express = require('express');
+const app = express();
 const haikus = require('./haikus.json');
 const port = process.env.PORT || 3000;
 
