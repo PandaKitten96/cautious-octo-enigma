@@ -6,7 +6,7 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
     color: #fff;
-    text-align:center;
+    text-align: center;
 }
 
 .mona-images {
@@ -16,7 +16,7 @@ body {
 }
 
 .haiku-containers {
-    padding: 10px 0px 20px 0px;
+    padding: 10px 0 20px 0;
 }
 
 .haikus {
@@ -25,7 +25,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .june-images {
+    .mona-images {
         max-width: 340px;
         max-height: 340px;
     }
