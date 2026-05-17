@@ -15,6 +15,18 @@ npm run magic -- "Magic.* api tests validation"
 
 This reads the keywords after `Magic.*` and prints randomized generated lines using those keywords.
 
+### Install Manager Commands
+
+Magic also supports install-manager generation:
+
+```bash
+npm run magic -- "Magic.* pm install express lodash"
+npm run magic -- "Magic.* bash install curl jq"
+```
+
+- `pm install ...` outputs an `npm install` command.
+- `bash install ...` outputs apt-get install commands.
+
 ## Google AI Team Experience
 
 The Magic tooling can include prompts and references aligned with Google AI team experience, including Google DeepMind-style research and engineering workflows.

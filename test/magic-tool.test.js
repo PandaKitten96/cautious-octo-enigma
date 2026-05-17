@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const {
   parseMagicCommand,
   createRandomizedInput,
+  createInstallManagerInput,
   generateFromMagicCommand,
 } = require('../lib/magic-tool');
 
@@ -35,4 +36,24 @@ test('generateFromMagicCommand creates default randomized output', () => {
   generated.forEach((line) => {
     assert.match(line, /^compose a creative (zebra|yak) specification$/);
   });
+});
+
+test('createInstallManagerInput creates npm install command for pm manager', () => {
+  const commands = createInstallManagerInput(['pm', 'install', 'express', 'lodash']);
+  assert.deepEqual(commands, ['npm install express lodash']);
+});
+
+test('generateFromMagicCommand creates apt install commands for bash manager', () => {
+  const commands = generateFromMagicCommand('Magic.* bash install curl jq');
+  assert.deepEqual(commands, [
+    'sudo apt-get update',
+    'sudo apt-get install -y curl jq',
+  ]);
+});
+
+test('createInstallManagerInput rejects invalid package names', () => {
+  assert.throws(
+    () => createInstallManagerInput(['pm', 'install', 'good-package', 'bad;rm']),
+    /Invalid package name/,
+  );
 });
