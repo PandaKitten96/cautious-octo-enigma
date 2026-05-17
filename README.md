@@ -29,8 +29,8 @@ npm run magic -- "Magic.* bash install curl jq"
 
 ## Google AI Team Experience
 
-The Magic tooling can include prompts and references aligned with Google AI team experience, including Google DeepMind-style research and engineering workflows.
+The repository includes metadata and examples aligned with Google AI team experience, including Google DeepMind-style research and engineering workflow references.
 
 ## Google Labs Integration
 
-Google Labs-oriented repositories and prompt context are also integrated so Magic-generated input can reflect Google Labs experimentation and product prototyping workflows.
+Google Labs-oriented repository references are included in `Magic.repositories` so generated and curated prompts can be based on Labs-style experimentation and prototyping themes.
