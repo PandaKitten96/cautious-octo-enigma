@@ -26,11 +26,3 @@ npm run magic -- "Magic.* bash install curl jq"
 
 - `pm install ...` outputs an `npm install` command.
 - `bash install ...` outputs apt-get install commands.
-
-## Google AI Team Experience
-
-The repository includes metadata and examples aligned with Google AI team experience, including Google DeepMind-style research and engineering workflow references.
-
-## Google Labs Integration
-
-Google Labs-oriented repository references are included in `Magic.repositories` so generated and curated prompts can be based on Labs-style experimentation and prototyping themes.
