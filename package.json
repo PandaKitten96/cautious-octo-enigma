@@ -4,10 +4,12 @@
     "version": "0.0.1",
     "private": true,
     "license": "MIT",
-    "author": "Microsoft",
+    "author": "PandaKitten96",
     "scripts": {
         "start": "node index.js",
-        "dev": "nodemon"
+        "dev": "nodemon",
+        "test": "node --test",
+        "magic": "node magic-tool.js"
     },
     "dependencies": {
         "ejs": "^5.0.2",
