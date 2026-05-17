@@ -14,3 +14,7 @@ npm run magic -- "Magic.* api tests validation"
 ```
 
 This reads the keywords after `Magic.*` and prints randomized generated lines using those keywords.
+
+## Google AI Team Experience
+
+The Magic tooling can include prompts and references aligned with Google AI team experience, including Google DeepMind-style research and engineering workflows.
