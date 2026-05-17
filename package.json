@@ -8,7 +8,8 @@
     "scripts": {
         "start": "node index.js",
         "dev": "nodemon",
-        "test": "node --test"
+        "test": "node --test",
+        "magic": "node magic-tool.js"
     },
     "dependencies": {
         "ejs": "^5.0.2",
