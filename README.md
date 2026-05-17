@@ -18,3 +18,7 @@ This reads the keywords after `Magic.*` and prints randomized generated lines us
 ## Google AI Team Experience
 
 The Magic tooling can include prompts and references aligned with Google AI team experience, including Google DeepMind-style research and engineering workflows.
+
+## Google Labs Integration
+
+Google Labs-oriented repositories and prompt context are also integrated so Magic-generated input can reflect Google Labs experimentation and product prototyping workflows.
